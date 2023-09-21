@@ -1,0 +1,21 @@
+Double num1, num2, num3, media, MaiorNumero, MenorNumero;
+
+Console.WriteLine("Digite o Primeiro número: ");
+num1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o Segundo Número: ");
+num2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o Terceiro Número: ");
+num3 = Convert.ToDouble(Console.ReadLine());
+
+media = (num1 + num2 + num3) / 3;
+
+MaiorNumero = Math.Max(num1, Math.Max(num2, num3));
+MenorNumero = Math.Min(num1, Math.Min(num2, num3));
+
+Console.WriteLine("O Maior Número Digitado é: " + MaiorNumero);
+Console.WriteLine("O Menor Número Digitado é: " + MenorNumero);
+Console.WriteLine("A média dos Números Digitados é: " + media);
+
+Console.ReadLine();
